@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="stars"></div>
+    <header>
+        <div class="brand">
+            <div class="logo">✨</div>
+            <div>
+                <h1>AstroSpark</h1>
+                <p>Beautiful DOB insights – instantly, privately, in your browser.</p>
+            </div>
+        </div>
+        <div class="controls">
+            <div role="switch" aria-label="Toggle light mode" class="toggle" id="themeToggle">
+                <div class="knob">☀️</div>
+            </div>
+            <button class="btn ghost" id="printBtn">Download PDF</button>
+            <button class="btn" id="demoBtn">Try Demo</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-card">
+                <h2 class="title-xl">Know your <span
+                        style="background: linear-gradient(90deg, var(--accent), var(--accent-2)); -webkit-background-clip: text; background-clip: text; color: transparent;">Cosmic
+                        Profile</span> from your DOB</h2>
+                <p class="subtitle">Enter your first name, surname, and date of birth. We compute your Western zodiac,
+                    Chinese zodiac, life path number, ruling planet, birthstone, age, weekday of birth, next birthday
+                    countdown, and more.</p>
+                <div class="points">
+                    <span><span class="dot"></span> 100% client-side • No signup</span>
+                    <span><span class="dot"></span> Print-ready personalized card</span>
+                    <span><span class="dot"></span> Works offline once loaded</span>
+                    <span><span class="dot"></span> Validates leap years & dates</span>
+                </div>
+            </div>
+
+            <div class="hero-card form-card">
+                <form id="astroForm" novalidate>
+                    <div class="field">
+                        <label for="firstName">First Name</label>
+                        <input id="firstName" name="firstName" placeholder="e.g., Aditi" required />
+                    </div>
+                    <div class="field">
+                        <label for="lastName">Surname</label>
+                        <input id="lastName" name="lastName" placeholder="e.g., Sharma" required />
+                    </div>
+                    <div class="field">
+                        <label for="day">Day</label>
+                        <input id="day" name="day" type="number" min="1" max="31" placeholder="DD" required />
+                    </div>
+                    <div class="field">
+                        <label for="month">Month</label>
+                        <select id="month" name="month" required>
+                            <option value="" disabled selected>-- Select Month --</option>
+                            <option value="1">January</option>
+                            <option value="2">February</option>
+                            <option value="3">March</option>
+                            <option value="4">April</option>
+                            <option value="5">May</option>
+                            <option value="6">June</option>
+                            <option value="7">July</option>
+                            <option value="8">August</option>
+                            <option value="9">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="year">Year</label>
+                        <input id="year" name="year" type="number" min="1900" max="2100" placeholder="YYYY" required />
+                    </div>
+                    <div class="actions">
+                        <button type="submit" class="btn">Generate Astro Profile</button>
+                        <button type="reset" class="btn ghost">Clear</button>
+                        <span class="muted" id="errorMsg" aria-live="polite"></span>
+                    </div>
+                    <section class="results" id="results" aria-live="polite">
+                        <!-- Cards inserted dynamically -->
+                    </section>
+                </form>
+            </div>
+        </section>
+
+
+        <p class="footnote">Disclaimer: This site provides entertainment-oriented insights based on common astrological
+            systems. For medical, legal, or financial decisions, consult qualified professionals.</p>
+
+    </main>
+    <script src="first.js"></script>
+</body>
+
+</html>
