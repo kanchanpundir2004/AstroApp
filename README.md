@@ -1,14 +1,23 @@
-# AstroApp
- Simple Frontend Project  This is a small Astro-based web application built . The app demonstrates how to structure and build a frontend project with Astro while keeping the code clean and beginner-friendly.  ✨ Features  ⚡ Fast static site built with Astro  🎨 Styled using CSS for a simple, responsive layout  🧩 Interactive elements powered by JS
+🌌 Astro App
 
- 🛠️ Tech Stack
+A simple Astro-based web application built with JavaScript, HTML, and CSS. This project demonstrates how to create a fast, lightweight, and responsive frontend using Astro.
 
-Astro – Static site builder
+✨ Features
 
-HTML5 – Markup
+⚡ Blazing fast static site generation with Astro
 
-CSS3 – Styling
+🎨 Responsive design with pure CSS
 
-JavaScript (ES6) – Functionality
+🧩 Interactive UI powered by JavaScript
 
+📂 Clean and beginner-friendly project structure
 
+🌍 Easy to deploy on platforms like Vercel, Netlify, or GitHub Pages
+
+🛠️ Tech Stack
+
+HTML5 – Semantic markup
+
+CSS3 – Styling and responsive layouts
+
+JavaScript (ES6) – Dynamic functionality
