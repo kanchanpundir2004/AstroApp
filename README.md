@@ -11,5 +11,4 @@ CSS3 – Styling
 
 JavaScript (ES6) – Functionality
 
-Netify:
-astroapp09.netlify.app
+
